@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="ExcelReadServiceComponent" immediate="true" activate="activate" modified="activate">
+  <service>
+    <provide interface="AemDemo.core.services.ReadExcel"/>
+  </service>
+  <implementation class="AemDemo.core.services.ReadExcelImlp"/>
+</scr:component>

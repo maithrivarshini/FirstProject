@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Created-By: Apache Maven
+Built-By: Maithri
+Build-Jdk: 11.0.10
+Implementation-Title: AemDemo - UI content
+Implementation-Version: 1.0-SNAPSHOT
+Implementation-Vendor-Id: AemDemo
+Content-Package-Roots: /conf/AemDemo,/content/AemDemo,/content/dam/AemDe
+ mo
+Content-Package-Description: UI content package for AemDemo
+Content-Package-Id: AemDemo:AemDemo.ui.content:1.0-SNAPSHOT
+Content-Package-Type: content
+

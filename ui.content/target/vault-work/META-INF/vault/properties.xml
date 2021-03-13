@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>AemDemo - UI content</comment>
+<entry key="allowIndexDefinitions">false</entry>
+<entry key="acHandling">merge_preserve</entry>
+<entry key="created">2021-03-13T18:09:23.076+05:30</entry>
+<entry key="groupId">AemDemo</entry>
+<entry key="description">UI content package for AemDemo</entry>
+<entry key="version">1.0-SNAPSHOT</entry>
+<entry key="packageType">content</entry>
+<entry key="requiresRoot">false</entry>
+<entry key="createdBy">Maithri</entry>
+<entry key="name">AemDemo.ui.content</entry>
+<entry key="artifactId">AemDemo.ui.content</entry>
+<entry key="group">AemDemo</entry>
+</properties>

@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1615639141561
+Bundle-Category: AemDemo
+Bundle-Description: "Bundles for Integration Tests for AemDemo"
+Bundle-ManifestVersion: 2
+Bundle-Name: AemDemo - Integration Tests Bundles
+Bundle-SymbolicName: AemDemo.it.tests
+Bundle-Version: 1.0.0.20210313123901561
+Created-By: 11.0.10 (Oracle Corporation)
+Export-Package: AemDemo.it.tests;version="1.0";uses:="org.apache.sling
+ .junit.annotations,org.junit,org.junit.runner"
+Import-Package: AemDemo.core.models;version="[1.0,2)",org.apache.sling
+ .api.resource;version="[2.11,3)",org.apache.sling.junit.annotations;v
+ ersion="[1.0,2)",org.apache.sling.settings;version="[1.3,2)",org.juni
+ t;version="[4.8,5)",org.junit.runner;version="[4.8,5)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Sling-Test-Regexp: .*Test
+Tool: Bnd-4.2.0.201903051501
+

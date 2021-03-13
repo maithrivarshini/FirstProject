@@ -1,0 +1,50 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1615639134657
+Bundle-Category: AemDemo
+Bundle-Description: "Core bundle for AemDemo"
+Bundle-ManifestVersion: 2
+Bundle-Name: AemDemo - Core
+Bundle-SymbolicName: AemDemo.core
+Bundle-Version: 1.0.0.20210313123854656
+Created-By: 11.0.10 (Oracle Corporation)
+Export-Package: AemDemo.core.filters;version="1.0";uses:="javax.servle
+ t",AemDemo.core.listeners;version="1.0";uses:="org.osgi.service.event
+ ",AemDemo.core.models;version="1.0";uses:="javax.annotation,org.apach
+ e.sling.api.resource,org.apache.sling.models.annotations,org.apache.s
+ ling.models.annotations.injectorspecific",AemDemo.core.schedulers;ver
+ sion="1.0",AemDemo.core.servlets;version="1.0";uses:="javax.servlet,o
+ rg.apache.sling.api,org.apache.sling.api.servlets"
+Import-Package: AemDemo.core.filters;version="[1.0,2)",AemDemo.core.li
+ steners;version="[1.0,2)",AemDemo.core.schedulers;version="[1.0,2)",A
+ emDemo.core.servlets;version="[1.0,2)",com.day.cq.wcm.api;version="[1
+ .27,2)",javax.annotation;version="[1.3,2)",javax.inject;version="[1.0
+ ,2)",javax.jcr;version="[2.0,3)",javax.servlet;version="[3.1,4)",org.
+ apache.poi.xssf.usermodel;version="[3.0,4)",org.apache.sling.api;vers
+ ion="[2.3,3)",org.apache.sling.api.request;version="[2.4,3)",org.apac
+ he.sling.api.resource;version="[2.11,3)",org.apache.sling.api.servlet
+ s;version="[2.2,3)",org.apache.sling.models.annotations;version="[1.5
+ ,2)",org.apache.sling.models.annotations.injectorspecific;version="[1
+ .1,2)",org.apache.sling.settings;version="[1.3,2)",org.osgi.service.e
+ vent;version="[1.3,2)",org.slf4j;version="[1.7,2)"
+Private-Package: AemDemo.core.services
+Provide-Capability: osgi.service;objectClass:List<String>="AemDemo.cor
+ e.services.CreateAPage",osgi.service;objectClass:List<String>="AemDem
+ o.core.services.OrchardService",osgi.service;objectClass:List<String>
+ ="AemDemo.core.services.ReadExcel",osgi.service;objectClass:List<Stri
+ ng>="java.lang.Runnable",osgi.service;objectClass:List<String>="javax
+ .servlet.Filter",osgi.service;objectClass:List<String>="javax.servlet
+ .Servlet",osgi.service;objectClass:List<String>="org.osgi.service.eve
+ nt.EventHandler"
+Require-Capability: osgi.service;filter:="(objectClass=org.apache.slin
+ g.api.resource.ResourceResolverFactory)";effective:=active,osgi.exten
+ der;filter:="(&(osgi.extender=osgi.component)(version>=1.4.0)(!(versi
+ on>=2.0.0)))",osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Service-Component: OSGI-INF/AemDemo.core.filters.LoggingFilter.xml,OSG
+ I-INF/AemDemo.core.listeners.SimpleResourceListener.xml,OSGI-INF/AemD
+ emo.core.schedulers.SimpleScheduledTask.xml,OSGI-INF/Create-Page-Serv
+ ice.xml,OSGI-INF/AemDemo.core.services.OrchardServicfeImpl.xml,OSGI-I
+ NF/ExcelReadServiceComponent.xml,OSGI-INF/AemDemo.core.servlets.Simpl
+ eServlet.xml
+Sling-Model-Packages: AemDemo.core.models
+Tool: Bnd-4.2.0.201903051501
+
